@@ -1,0 +1,23 @@
+.footer{
+    background-color: rgb(107, 147, 187);
+    margin-top:2px;
+}
+
+.footerText{
+    text-align: center;
+    color: #FFF
+}
+
+.linkcontact{
+    text-align: center;
+}
+#formcontact{
+    margin-top: 5px;
+    
+}
+#formcontact input, #formcontact textarea{
+    width: 70%;
+}
+#btnsend{
+    width: 70%;
+}
