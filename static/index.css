@@ -31,18 +31,22 @@
     text-align: center;
 }
 
+.menu__a {
+    font-weight: bold;
+}
+
 .navbar-brand,
 .active {
     background-color: white;
     border-radius: 5px;
-    color: rgb(107, 147, 187);
+    color: rgb(78, 118, 158) !important;
     padding: 6px 12px;
 }
 
 .menu__a:hover {
+    background-color: white;
     border-radius: 5px;
-    background-color: white !important;
-    color: rgb(107, 147, 187) !important;
+    color: rgb(78, 118, 158) !important;
 }
 
 .main_top,
@@ -237,8 +241,9 @@ a:hover {
         margin: 40px;
     }
 
-    .active {
-        background-color: rgb(107, 147, 187);
+    .active,
+    .menu__a:hover {
+        background-color: rgb(107, 147, 187) !important;
         color: white !important; 
     }
 }
