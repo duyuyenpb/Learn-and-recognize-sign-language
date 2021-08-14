@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+import os
+from flask import Flask, render_template, request, send_from_directory
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
@@ -20,6 +21,10 @@ def flashcard():
 @app.route("/test", methods=['GET'])
 def test():
     return render_template('test.html')
-
-if __name__ == '__main__':
-    app.run(port=3000, debug=True)
+    
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+if __name__ == "__main__":
+    app.run()
