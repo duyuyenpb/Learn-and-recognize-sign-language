@@ -1,1 +1,1 @@
-web: gunicorn app:app --log-file=-heroku local web
+web: gunicorn app:app
