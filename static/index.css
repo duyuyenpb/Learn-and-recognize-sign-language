@@ -242,5 +242,9 @@ a:hover {
         background-color: rgb(107, 147, 187) !important;
         color: white !important; 
     }
+
+    .info_box{
+        width: 270px;
+    }
 }
 

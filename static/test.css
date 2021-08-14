@@ -285,3 +285,11 @@ section .option_list .option .icon{
     color: #fff;
     background: rgb(107, 147, 187);
 }
+
+@media (max-width: 768px) { 
+    .info_box,
+    .quiz_box{
+        margin-top: 70px;
+        width: 310px !important;
+    }
+}
