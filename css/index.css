@@ -1,5 +1,11 @@
+* {
+    text-decoration: none !important;
+    text-decoration-color: none !important;
+}
+
 .navbar {
     position: fixed;
+    z-index: 100;
     width: 100%;
     padding: 40px;
     background-color: rgb(107, 147, 187);
@@ -13,15 +19,30 @@
     color: white !important;
 }
 
-.pr-20 {
-    padding-right: 50px !important;
+.cl-bluetheme {
+    color: rgb(107, 147, 187);
 }
 
-.navbar-brand {
+.mr-20 {
+    margin-right: 50px !important;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.navbar-brand,
+.active {
     background-color: white;
     border-radius: 5px;
     color:rgb(155, 189, 223) !important;
     padding: 6px 12px;
+}
+
+.menu__a:hover {
+    border-radius: 5px;
+    background-color: white !important;
+    color:rgb(155, 189, 223) !important;
 }
 
 .main_top,
@@ -63,6 +84,114 @@
     font-size: 50px;
 }
 
+.box_main {
+    display: flex;
+    padding: 70px;
+}
+
+.box_top,
+.box_bottom {
+    background-color: rgb(250, 224, 228);
+    color: rgb(107, 147, 187);
+    border-radius: 5px;
+    width: 50%;
+    margin: 40px;
+    height: 350px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.box_top_text,
+.box_bottom_text {
+    margin: 20px;
+}
+
+.button_learn_intro {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: rgb(107, 147, 187);
+    font-weight: bold;
+    margin-top: 40px;
+    color: white;
+}
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(250, 224, 228)
+}
+
+.box_card {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_flashcard {
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.card_flip {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+.front,
+.back {
+    background-color: aliceblue;
+    display: block;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all .9s cubic-bezier(0.175, 0.885, 0.32, 1.275);    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front {
+    background-color: rgb(250, 189, 198);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.205);
+    transform: rotateY(0);
+}
+
+.front > img {
+    border-radius: 5px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: rotateY(-180deg);
+}
+
+.card_flip:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card_flip:hover .back {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+
 @media (max-width: 768px) { 
     .navbar {
         padding: 20px;
@@ -94,6 +223,23 @@
         width: 100%;
         padding: 70px 20px;
         text-align: center;
+    }
+    .box_main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .box_top,
+    .box_bottom {
+        width: 100%;
+        margin: 40px;
+    }
+
+    .active {
+        background-color: rgb(107, 147, 187);
+        color: white !important; 
     }
 }
 
