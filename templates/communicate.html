@@ -10,15 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='about.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
     <title> About</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark py-3" id="my-nav">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" id="my-title" href="./index.html">Main</a>
+            <a class="navbar-brand fw-bold" id="my-title" href="/">Main</a>
             <button class="navbar-toggler freelancer__navbar__button cl-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,14 +28,14 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li id="a" class="nav-item">
-                        <a class="menu__a nav-link pr-20 cl-white" aria-current="page" href="./about.html"
+                        <a class="menu__a nav-link pr-20 cl-white" aria-current="page" href="/about"
                             class="about_us">About us</a>
                     </li>
                     <li id="b" class="nav-item">
                         <a class=" menu__a nav-link pr-20 cl-white" href="#learn" class="Learn">Learn</a>
                     </li>
                     <li id="c" class="nav-item">
-                        <a class=" menu__a nav-link pr-20 cl-white" href="./communicate.html"
+                        <a class=" menu__a nav-link pr-20 cl-white" href="/communicate"
                             class="communicate">Communicate</a>
                     </li>
                 </ul>
@@ -44,10 +44,8 @@
     </nav>
 
     <div class="main_bottom">
-        <div class="main_about">
-           
-            
-           <img src="/images/about1.png">
+        <div class="main_com">
+            <img src="{{url_for('static', filename='images/about1.png')}}" class="card-img-top" alt="img">
         </div>
     </div>
 
@@ -60,7 +58,7 @@
                     <h1 class="footerText">Contact Us Now</h1>
                     <div class="linkcontact">
                         <a href="https://www.facebook.com/profile.php?id=100008312435506"><button type="button"
-                                class="btn btn-light "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                class="btn btn-light " ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path
                                         d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
