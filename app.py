@@ -22,9 +22,5 @@ def flashcard():
 def test():
     return render_template('test.html')
     
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 if __name__ == "__main__":
-    app.run()
+    app.run(host='127.0.0.1',port=8000,debug=True)
