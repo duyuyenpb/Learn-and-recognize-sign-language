@@ -3,7 +3,7 @@ let questions = [
     {
     numb: 1,
     question: "Đây là chữ gì",
-    img: "{{url_for('static', filename='images/letterb.png')}}",
+    img: "B",
     answer: "Chữ B",
     options: [
       "Chữ A",
@@ -15,7 +15,7 @@ let questions = [
     {
     numb: 2,
     question: "Đây là chữ gì?",
-    img: "{{url_for('static', filename='images/lettera.png')}}",
+    img: "A",
     answer: "Chữ A",
     options: [
       "Chữ C",
@@ -27,7 +27,7 @@ let questions = [
     {
     numb: 3,
     question: "Đây là chữ gì?",
-    img: "{{url_for('static', filename='images/letterc.png')}}",
+    img: "C",
     answer: "Chữ C",
     options: [
       "Chữ A",
@@ -39,7 +39,7 @@ let questions = [
     {
     numb: 4,
     question: "Đây là chữ gì?",
-    img: "{{url_for('static', filename='images/letterd.png')}}",
+    img: "D",
     answer: "Chữ D",
     options: [
       "Chữ C",
@@ -51,8 +51,8 @@ let questions = [
     {
     numb: 5,
     question: "Đây là chữ gì?",
-    img: "{{url_for('static', filename='images/lettera.png')}}",
-    answer: "Chữ a",
+    img: "A",
+    answer: "Chữ A",
     options: [
       "Chữ N",
       "Chữ A",

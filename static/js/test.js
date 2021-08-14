@@ -68,11 +68,19 @@ next_btn.onclick = ()=>{
 // getting questions and options from array
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
-    const que_picture = document.querySelector(".que_picture");
+    let que_picture = document.querySelector(".que_picture");
 
     //creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
-    let que_pic = '<img src="' + questions[index].img + '">';
+    // let que_pic = '<img src="' + questions[index].img + '"/>';
+    let que_pic = `<img src="/static/images/${questions[index].img}hand.svg">`;
+    console.log('hello')
+    console.log(que_pic)
+    // console.log('<img src="' + '{{url_for(\'static\', filename=\'images/lettera.png\')}}')
+
+    // {{url_for('static', filename='images/lettera.png')}}
+    // let que_pic = '{{url_for(\'static\', filename=\'images/lettera.png\')}}';
+
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
