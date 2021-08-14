@@ -87,7 +87,10 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    margin-top: 130px; 
+    padding-bottom: 70px;
 }
+
 .quiz_box header{
     position: relative;
     z-index: 2;
