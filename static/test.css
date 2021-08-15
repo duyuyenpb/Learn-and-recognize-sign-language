@@ -49,7 +49,7 @@
     font-weight: 600;
 }
 .info_box .info-list{
-    padding: 15px 30px;
+    padding: 14px 30px;
 }
 .info_box .info-list .info{
     margin: 5px 0;
@@ -70,7 +70,7 @@
 .info_box .buttons button{
     margin: 0 5px;
     height: 40px;
-    width: 100px;
+    width: 98px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -121,35 +121,30 @@ section .option_list{
     display: block;   
 }
 section .option_list .option{
-    background: aliceblue;
     border: 1px solid rgb(107, 147, 187);
+    background: rgb(180, 201, 219);
     border-radius: 5px;
-    padding: 8px 15px;
-    font-size: 17px;
+    padding: 6px 12px;
+    font-size: 16px;
     margin-bottom: 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-section .option_list .option:last-child{
-    margin-bottom: 0px;
-}
+
 section .option_list .option:hover{
     color: #004085;
     background: rgb(107, 147, 187);
-    border: 1px solid rgb(107, 147, 187);
 }
 section .option_list .option.correct{
     color: #155724;
     background: #d4edda;
-    border: 1px solid #c3e6cb;
 }
 section .option_list .option.incorrect{
     color: #721c24;
     background: #f8d7da;
-    border: 1px solid #f5c6cb;
 }
 section .option_list .option.disabled{
     pointer-events: none;
@@ -181,7 +176,7 @@ section .option_list .option .icon{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid lightgrey;
+    border-top: 2px solid rgb(160, 159, 159);
 }
 .test_footer .total_que span{
     display: flex;
@@ -202,9 +197,9 @@ section .option_list .option .icon{
     cursor: pointer;
     border: none;
     outline: none;
-    color: #fff;
+    color: white;
     border-radius: 5px;
-    background: rgb(107, 147, 187);
+    background: rgb(82, 89, 95);
     border: 1px solid rgb(107, 147, 187);
     line-height: 10px;
     opacity: 0;
@@ -221,7 +216,7 @@ section .option_list .option .icon{
     transform: scale(1);
 }
 .result_box{
-    background: #fff;
+    background: white;
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
@@ -237,7 +232,7 @@ section .option_list .option .icon{
 .result_box .icon{
     font-size: 100px;
     color: rgb(107, 147, 187);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .result_box .complete_text{
     font-size: 20px;
@@ -246,8 +241,8 @@ section .option_list .option .icon{
 .result_box .score_text span{
     display: flex;
     margin: 10px 0;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 400;
 }
 .result_box .score_text span p{
     padding: 0 4px;
