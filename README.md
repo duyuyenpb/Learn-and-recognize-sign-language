@@ -4,4 +4,4 @@ A website that teaches sign language and direct letter recognition using HTML, C
 
 Source for more information: https://www.facebook.com/shecodesvietnam/photos/979231276191601
 
-Link(updated): https://viesign.org.vn/
+Link: https://viesign.org.vn/
